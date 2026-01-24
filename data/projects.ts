@@ -33,7 +33,7 @@ pose detection combined with custom logic to count repetitions.`,
     demoUrl: 'https://huggingface.co/spaces/kevinneung/pushup_counter',
     repoUrl: 'https://github.com/kevinneung/pushup_model',
     spaceId: 'kevinneung/pushup_counter',
-    status: 'Coming Soon',
+    status: 'Live',
     featured: true,
   },
   {

@@ -14,7 +14,7 @@ export default function HuggingFaceEmbed({ spaceId, title }: HuggingFaceEmbedPro
         width="100%"
         height="800"
         className="rounded-lg"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; camera"
       />
     </div>
   );
