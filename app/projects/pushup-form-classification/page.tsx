@@ -18,13 +18,13 @@ export default function PushupProjectPage() {
         {/* Project Header */}
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
-            <h1 className="text-4xl font-bold text-white">Pushup Counter Model</h1>
+            <h1 className="text-4xl font-bold text-white">Pushup Push-Up Form Classifier</h1>
             <span className="text-xs px-2 py-1 rounded bg-green-900 text-green-300">
               Live
             </span>
           </div>
           <p className="text-gray-300 text-lg mb-6">
-            A computer vision model that detects and counts pushups in real-time using pose estimation.
+            A computer vision model that detects and classifies pushups in real-time using pose estimation.
           </p>
 
           {/* Project Details */}
