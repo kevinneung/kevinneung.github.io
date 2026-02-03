@@ -49,7 +49,7 @@ export default function PushupProjectPage() {
             </div>
           </div>
 
-          <div className="grid md:grid-cols-2 gap-4 mb-12">
+          <div className="flex gap-4 mb-12">
             <a
               href="https://github.com/kevinneung/pushup_model"
               target="_blank"
@@ -58,6 +58,7 @@ export default function PushupProjectPage() {
             >
               View Repository
             </a>
+            {/* TODO: Re-enable when Hugging Face model is ready
             <a
               href="https://huggingface.co/kevinneung/pushup_model"
               target="_blank"
@@ -66,6 +67,7 @@ export default function PushupProjectPage() {
             >
               Hugging Face Model
             </a>
+            */}
           </div>
         </div>
 
