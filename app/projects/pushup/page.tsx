@@ -70,16 +70,32 @@ export default function PushupProjectPage() {
           </div>
         </div>
 
-        {/* Demo Placeholder */}
+        {/* Demo Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-bold text-white mb-6">Live Demo</h2>
-          <div className="bg-slate-800 rounded-lg p-12 text-center border border-slate-700">
-            <div className="text-6xl mb-4">Under Construction</div>
-            <h3 className="text-xl text-white mb-2">Demo Coming Soon</h3>
-            <p className="text-gray-400 max-w-md mx-auto">
-              The live demo is currently being developed. Check back soon to try the 
-              pushup counter in action!
-            </p>
+
+          {/* Good Form Detection */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-green-400 mb-4">Detection of good form:</h3>
+            <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
+              <img
+                src="/good_form.gif"
+                alt="Push-up good form detection demo"
+                className="w-full rounded-lg"
+              />
+            </div>
+          </div>
+
+          {/* Bad Form Detection */}
+          <div className="mb-8">
+            <h3 className="text-xl font-semibold text-red-400 mb-4">Detection of bad form:</h3>
+            <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
+              <img
+                src="/bad_form.gif"
+                alt="Push-up bad form detection demo"
+                className="w-full rounded-lg"
+              />
+            </div>
           </div>
         </div>
 
