@@ -19,8 +19,8 @@ export default function PushupProjectPage() {
         <div className="mb-12">
           <div className="flex items-center gap-3 mb-4">
             <h1 className="text-4xl font-bold text-white">Pushup Counter Model</h1>
-            <span className="text-xs px-2 py-1 rounded bg-gray-700 text-gray-300">
-              Coming Soon
+            <span className="text-xs px-2 py-1 rounded bg-green-900 text-green-300">
+              Live
             </span>
           </div>
           <p className="text-gray-300 text-lg mb-6">
@@ -35,7 +35,7 @@ export default function PushupProjectPage() {
                 <li>- Python and PyTorch</li>
                 <li>- MediaPipe Pose Detection</li>
                 <li>- Computer Vision</li>
-                <li>- Model Training and Evaluation</li>
+                <li>- Custom Annotator</li>
               </ul>
             </div>
 
@@ -43,9 +43,8 @@ export default function PushupProjectPage() {
               <h3 className="text-xl font-semibold text-blue-400 mb-4">Key Features</h3>
               <ul className="text-gray-300 space-y-2">
                 <li>- Real-time pose detection</li>
-                <li>- Accurate rep counting</li>
                 <li>- Video processing capabilities</li>
-                <li>- High accuracy metrics</li>
+                <li>- Confidence metric</li>
               </ul>
             </div>
           </div>
@@ -72,7 +71,7 @@ export default function PushupProjectPage() {
 
         {/* Demo Section */}
         <div className="mb-12">
-          <h2 className="text-2xl font-bold text-white mb-6">Live Demo</h2>
+          <h2 className="text-2xl font-bold text-white mb-6">Examples</h2>
 
           {/* Good Form Detection */}
           <div className="mb-8">
@@ -103,21 +102,31 @@ export default function PushupProjectPage() {
         <div className="prose prose-invert max-w-none">
           <h2 className="text-2xl font-bold text-white mb-4">Project Overview</h2>
           <p className="text-gray-300 mb-4">
-            This project demonstrates expertise in computer vision and model deployment.
-            The pushup counter uses pose estimation to detect body keypoints and identify
-            pushup repetitions with high accuracy.
+            This project demonstrates the end to end implementation of a computer vision model. It uses a pose estimator, a Bi-directional LSTM RNN, and a
+            classifier head to classify  push-ups as either having good or bad form. Bad form pushups were annotated as push ups with hip sagging, leg sagging, and other 
+            limb placements that deviate from proper form.
+
           </p>
 
           <h3 className="text-xl font-semibold text-white mt-8 mb-4">Architecture</h3>
           <p className="text-gray-300 mb-4">
-            The system uses MediaPipe for real-time pose detection combined with custom
-            logic to count repetitions. Models are optimized for deployment on Hugging Face Spaces.
+            The system uses MediaPipe as a pose estimator to detect body keypoints, followed by 
+            feature engineering to derive angles, movement, and other significant measurements. Once the
+            feature engineering is complete, a Bi-direction LSTM model is trained on key frames, and 
+            contextualizes push-up repititions based on an annotated ground truth. Lastly, these results are passed through a
+            classifier head, and enables the model to classify the push-up as having either good or bad form.
           </p>
 
           <h3 className="text-xl font-semibold text-white mt-8 mb-4">Results</h3>
           <p className="text-gray-300 mb-4">
-            Achieves high accuracy in counting pushups across different video qualities
-            and angles. The model is production-ready and scalable.
+            Classifies push-up form in near real-time. The model can be used with a webcam to monitor form, during workouts. 
+          </p>
+
+          <h3 className="text-xl font-semibold text-white mt-8 mb-4">Next Steps</h3>
+          <p className="text-gray-300 mb-4">
+            To improve the accuracy and generalization of the model, the dataset needs to be more robust.
+            This includes annotating more instances of bad pushup form, more types of bad form, different participants of varying build, wardrobe, and gender, 
+            varying backgrounds, and more.
           </p>
         </div>
       </div>
