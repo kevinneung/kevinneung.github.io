@@ -20,9 +20,9 @@ export default function Navbar() {
           <Link href="/about" className="text-gray-300 hover:text-white transition">
             About
           </Link>
-          <Link href="/blog" className="text-gray-300 hover:text-white transition">
+          {/* <Link href="/blog" className="text-gray-300 hover:text-white transition">
             Blog
-          </Link>
+          </Link> */}
         </div>
       </div>
     </nav>
