@@ -9,6 +9,7 @@ export interface Project {
   demoUrl?: string;
   repoUrl?: string;
   spaceId?: string;
+  screenshots?: { src: string; caption: string }[];
   status: 'Live' | 'In Progress' | 'Coming Soon';
   featured: boolean;
 }
@@ -72,6 +73,11 @@ document drafting, and professional correspondence.`,
       'Full-featured desktop UI with chat, file browser, and agent monitoring',
     ],
     repoUrl: 'https://github.com/kevinneung/clinical_research_assistant',
+    screenshots: [
+      { src: '/clinical-research-assistant/screenshot_1.png', caption: 'Caption for screenshot 1' },
+      { src: '/clinical-research-assistant/screenshot_2.png', caption: 'Caption for screenshot 2' },
+      { src: '/clinical-research-assistant/screenshot_3.png', caption: 'Caption for screenshot 3' },
+    ],
     status: 'In Progress',
     featured: false,
   },

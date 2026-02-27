@@ -85,6 +85,27 @@ export default async function ProjectPage({
           )}
         </div>
 
+        {/* Screenshots */}
+        {project.screenshots && project.screenshots.length > 0 && (
+          <div className="mb-12">
+            <h2 className="text-2xl font-semibold text-white mb-4">Screenshots</h2>
+            <div className="space-y-8">
+              {project.screenshots.map((screenshot, index) => (
+                <div key={index}>
+                  <div className="bg-slate-800 rounded-lg p-4 border border-slate-700">
+                    <img
+                      src={screenshot.src}
+                      alt={screenshot.caption}
+                      className="w-full rounded-lg"
+                    />
+                  </div>
+                  <p className="text-gray-400 text-sm mt-2 text-center">{screenshot.caption}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        )}
+
         {/* Demo Section */}
         <div className="mb-12">
           <h2 className="text-2xl font-semibold text-white mb-4">Live Demo</h2>
