@@ -29,7 +29,7 @@ export default function Footer() {
               <FaLinkedin size={24} />
             </a>
             <a
-              href="mailto:kevin@example.com"
+              href="mailto:neungkevin@gmail.com"
               className="text-gray-400 hover:text-white transition-colors"
             >
               <FaEnvelope size={24} />

@@ -33,7 +33,7 @@ export default function Home() {
           <a href="https://linkedin.com/in/kevinneung" className="text-gray-400 hover:text-white transition">
             <FaLinkedin />
           </a>
-          <a href="mailto:your-email@example.com" className="text-gray-400 hover:text-white transition">
+          <a href="mailto:neungkevin@gmail.com" className="text-gray-400 hover:text-white transition">
             <FaEnvelope />
           </a>
         </div>

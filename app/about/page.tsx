@@ -67,7 +67,7 @@ export default function AboutPage() {
                 LinkedIn
               </a>
               <a
-                href="mailto:kevin@example.com"
+                href="mailto:neungkevin@gmail.com"
                 className="flex items-center text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white transition-colors"
               >
                 <FaEnvelope size={24} className="mr-2" />
